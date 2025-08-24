@@ -79,7 +79,7 @@ def run_bot():
     """Запуск бота в отдельном потоке"""
     bot.polling(none_stop=True)
 
-if name == '__main__':
+if __name__ == '__main__':
     # Запускаем бот в отдельном потоке
     import threading
     threading.Thread(target=run_bot).start()
